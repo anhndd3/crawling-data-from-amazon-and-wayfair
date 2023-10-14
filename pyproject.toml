@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "data-pipeline-crawling-data-on-amazon-wayfair"
+version = "0.1.0"
+description = "The packages is used for the different environments."
+authors = ["anhndd <anhndd3@gmail.com>"]
+readme = "README.md"
+packages = [{include = "data_pipeline_crawling_data_on_amazon_wayfair"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+selenium = "4.12"
+webdriver-manager = "^4.0.1"
+beautifulsoup4 = "^4.12.2"
+python-dotenv = "^1.0.0"
+undetected-chromedriver = "^3.5.3"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
