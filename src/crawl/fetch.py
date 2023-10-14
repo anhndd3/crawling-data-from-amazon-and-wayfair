@@ -125,7 +125,6 @@ def fetch_amazon_product_detail(driver: WebDriver) -> AmazonProductDetail | None
         logger.warning(
             'Amazon Product Detail: Not have any contents or change content elements')
         return None
-
     return product
 
 
@@ -209,5 +208,4 @@ def fetch_wayfair_product_detail(driver: WebDriver) -> List[WayFairProduct]:
         logger.warning(
             'Wayfair Product Detail: Not have any contents or change content elements')
         return []
-
     return products
